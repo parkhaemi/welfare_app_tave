@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mapActivity"
+    android:orientation="vertical">
+
+
+    <!--main layout -->
+
+
+    <fragment
+        android:id="@+id/googleMap"
+        class="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-128dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="325dp"
+        android:layout_height="247dp"
+        android:background="@drawable/round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.865"
+        >
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notobold"
+            android:text="@string/map_info"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05">
+
+        </TextView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/map_button_1"
+            android:layout_width="85dp"
+            android:layout_height="47dp"
+            android:background="@drawable/map_button"
+            android:fontFamily="@font/notomedium"
+            android:textColor="#242424"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.075"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.295"
+            android:text="복지회관" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/map_button_2"
+            android:layout_width="85dp"
+            android:layout_height="47dp"
+            android:background="@drawable/map_button"
+            android:fontFamily="@font/notomedium"
+            android:textColor="#242424"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.295"
+            android:text="보건소" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/map_button_3"
+            android:layout_width="85dp"
+            android:layout_height="47dp"
+            android:background="@drawable/map_button"
+            android:fontFamily="@font/notomedium"
+            android:textColor="#242424"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.933"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.295"
+            android:text="경로당" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/map_button_4"
+            android:layout_width="85dp"
+            android:layout_height="47dp"
+            android:background="@drawable/map_button"
+            android:fontFamily="@font/notomedium"
+            android:textColor="#242424"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.075"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.615"
+            android:text="주민센터" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/map_button_5"
+            android:layout_width="85dp"
+            android:layout_height="47dp"
+            android:background="@drawable/map_button"
+            android:fontFamily="@font/notomedium"
+            android:textColor="#242424"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.615"
+            android:text="구청" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/map_button_6"
+            android:layout_width="85dp"
+            android:layout_height="47dp"
+            android:background="@drawable/map_button"
+            android:fontFamily="@font/notomedium"
+            android:textColor="#242424"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.933"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.615"
+            android:text="병원" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/map_button_7"
+            android:layout_width="290dp"
+            android:layout_height="47dp"
+            android:background="@drawable/map_button_all"
+            android:fontFamily="@font/notomedium"
+            android:textColor="#242424"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.92"
+            android:text="전체보기" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

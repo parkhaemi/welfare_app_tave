@@ -7,9 +7,11 @@
     android:background="#24BFAD"
     >
 
+
     <ImageView
-        android:layout_width="209dp"
-        android:layout_height="166dp"
+        android:id="@+id/imageView"
+        android:layout_width="178dp"
+        android:layout_height="160dp"
         android:src="@drawable/character_top_img"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,74 +21,87 @@
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/notobold"
+        android:lineSpacingExtra="9sp"
         android:text="@string/title"
-        android:textColor="@color/white"
-        android:textSize="50px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.132"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.655"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.113"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.588"
+        tools:text="당신을 위한 맞춤 복지" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/notomedium"
+        android:lineSpacingExtra="5sp"
         android:text="@string/sub_title"
         android:textColor="#80FFFFFF"
-        android:textSize="30px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.113"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.338"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.177"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.856"
+        tools:text="총 6개의 복지가 있습니다" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="332dp"
-        android:layout_height="287dp"
+        android:id="@+id/constraintLayout"
+        android:layout_width="325dp"
+        android:layout_height="302dp"
         android:background="@drawable/round"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.638"
+        app:layout_constraintVertical_bias="0.32"
         tools:ignore="MissingConstraints">
 
         <FrameLayout
-            android:layout_width="262dp"
-            android:layout_height="70dp"
+            android:layout_width="285dp"
+            android:layout_height="90dp"
             android:background="@drawable/welfare_view"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="35dp"
-            tools:layout_editor_absoluteY="38dp"></FrameLayout>
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"></FrameLayout>
 
         <FrameLayout
-            android:layout_width="262dp"
-            android:layout_height="70dp"
+            android:id="@+id/frameLayout"
+            android:layout_width="285dp"
+            android:layout_height="90dp"
             android:background="@drawable/welfare_view"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="35dp"
-            tools:layout_editor_absoluteY="130dp"></FrameLayout>
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.874"
+            tools:ignore="MissingConstraints"></FrameLayout>
 
         <FrameLayout
-            android:layout_width="262dp"
-            android:layout_height="40dp"
+            android:id="@+id/frameLayout2"
+            android:layout_width="275dp"
+            android:layout_height="47dp"
             android:background="@drawable/welfare_view_detail"
             android:text="@string/title"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="35dp"
-            tools:layout_editor_absoluteY="221dp">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.937">
 
             <TextView
                 android:id="@+id/see_all_button"
@@ -97,8 +112,6 @@
                 android:text="맞춤 복지 전체 보기 +"
                 android:textColor="#090909"
                 android:textSize="30px"
-
-                tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="41dp"
                 tools:layout_editor_absoluteY="285dp" />
 
@@ -107,63 +120,36 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/notobold"
-        android:text="@string/title"
+        android:text="복지 카테고리"
         android:textColor="@color/white"
-        android:textSize="50px"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="476dp" />
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.033"
+        tools:ignore="MissingConstraints" />
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/notomedium"
-        android:text="@string/sub_title"
+        android:text="총 16개의 카테고리가 있습니다"
         android:textColor="#80FFFFFF"
-        android:textSize="30px"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="517dp" />
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="332dp"
-        android:layout_height="287dp"
-        android:background="@drawable/round"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="563dp">
-
-        <FrameLayout
-            android:layout_width="262dp"
-            android:layout_height="70dp"
-            android:background="@drawable/welfare_view"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="35dp"
-            tools:layout_editor_absoluteY="38dp"></FrameLayout>
-
-        <FrameLayout
-            android:layout_width="262dp"
-            android:layout_height="70dp"
-            android:background="@drawable/welfare_view"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="35dp"
-            tools:layout_editor_absoluteY="130dp"></FrameLayout>
-
-        <FrameLayout
-            android:layout_width="262dp"
-            android:layout_height="40dp"
-            android:background="@drawable/welfare_view_detail"
-            android:text="@string/title"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="35dp"
-            tools:layout_editor_absoluteY="221dp"></FrameLayout>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.218" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

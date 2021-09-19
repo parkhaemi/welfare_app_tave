@@ -20,8 +20,14 @@
         </activity>
         <activity android:name=".listActivity"/>
         <activity android:name=".detailActivity"/>
+        <activity android:name=".mapActivity" />
+        <activity android:name=".chatActivity" />
 
 
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB0CHCKZmZVUKZdDLtc0_1qOgJ1PJmnR6I" />
     </application>
 
 </manifest>
