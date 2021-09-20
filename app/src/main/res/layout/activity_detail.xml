@@ -8,82 +8,96 @@
     >
 
     <ImageView
-        android:layout_width="421dp"
-        android:layout_height="276dp"
-        android:background="@color/gray"
+        android:id="@+id/imageView3"
+        android:layout_width="375dp"
+        android:layout_height="250dp"
+        android:background="@drawable/detail_picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-6dp"
-        tools:layout_editor_absoluteY="-8dp" />
 
     <ImageView
-        android:layout_width="25dp"
-        android:layout_height="25dp"
+        android:layout_width="19dp"
+        android:layout_height="15dp"
         android:src="@drawable/back_button_white"
-
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="49dp" />
-
-
-
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.119" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/notobold"
-        android:text="코로나 국민 지원금"
-        android:textColor="@color/white"
-        android:textSize="50px"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="195dp" />
+        android:lineSpacingExtra="9sp"
+        android:text="복지명이 들어갑니다"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.916" />
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout8"
+        android:layout_width="375dp"
+        android:layout_height="94dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="250dp"
+        tools:ignore="MissingConstraints">
+
+    </FrameLayout>
+
+    />
+
+
+
 
 
     <ImageView
-        android:layout_width="419dp"
-        android:layout_height="74dp"
-        android:src="@drawable/application_button"
-
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="660dp">
-
-
-    </ImageView>
+        android:id="@+id/imageView4"
+        android:layout_width="375dp"
+        android:layout_height="71dp"
+        android:background="#20beab"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"></ImageView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/notolight"
-        android:text="바로 신청하기"
-        android:textColor="#FFFFFF"
-        android:textSize="40px"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="671dp" />
+        android:lineSpacingExtra="6sp"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        android:text="바로 신청하기" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/notobold"
-        android:text="복지 상세."
-        android:textColor="#090909"
-        android:textSize="30px"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="285dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/notobold"
-        android:text="상세내용 출력"
-        android:textColor="#090909"
-        android:textSize="30px"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="308dp" />
-
+    <View
+        android:layout_width="325dp"
+        android:layout_height="1dp"
+        android:background="@drawable/divider"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout8"></View>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tave0910">
         <activity
-            android:name=".homeActivity"
+            android:name=".homeActivity"/>
+        <activity android:name=".listActivity"/>
+        <activity android:name=".detailActivity"
+
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,8 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".listActivity"/>
-        <activity android:name=".detailActivity"/>
         <activity android:name=".mapActivity" />
         <activity android:name=".chatActivity" />
 

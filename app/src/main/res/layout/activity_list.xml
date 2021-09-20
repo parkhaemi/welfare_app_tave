@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,84 +10,119 @@
 
 
     <ImageView
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:src="@drawable/back_button_white"
+        android:id="@+id/imageView2"
+        android:layout_width="19dp"
+        android:layout_height="15dp"
 
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="49dp" />
+        android:src="@drawable/back_button_white"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461"
+        tools:ignore="MissingConstraints" />
 
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/notobold"
-        android:text="@string/title"
-        android:textColor="@color/white"
-        android:textSize="50px"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="37dp" />
-
+        android:lineSpacingExtra="6sp"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438"
+        android:text="당신을 위한 맞춤 복지" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="350dp"
-        android:layout_height="600dp"
+        android:id="@+id/constraintLayout2"
+        android:layout_width="325dp"
+        android:layout_height="650dp"
         android:background="@drawable/round"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="103dp">
-
-        <FrameLayout
-            android:layout_width="300dp"
-            android:layout_height="70dp"
-            android:background="@drawable/welfare_view"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="25dp"
-            tools:layout_editor_absoluteY="122dp"></FrameLayout>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.712"
+        tools:ignore="MissingConstraints">
 
 
         <FrameLayout
             android:id="@+id/list1"
-
-            android:layout_width="300dp"
-            android:layout_height="70dp"
+            android:layout_width="285dp"
+            android:layout_height="90dp"
             android:background="@drawable/welfare_view"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="25dp"
-            tools:layout_editor_absoluteY="28dp"></FrameLayout>
-
-        <FrameLayout
-            android:layout_width="300dp"
-            android:layout_height="70dp"
-            android:background="@drawable/welfare_view"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="25dp"
-            tools:layout_editor_absoluteY="215dp"></FrameLayout>
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.666"
+            tools:ignore="MissingConstraints"></FrameLayout>
 
         <FrameLayout
-            android:layout_width="300dp"
-            android:layout_height="70dp"
+            android:id="@+id/frameLayout3"
+            android:layout_width="285dp"
+            android:layout_height="90dp"
             android:background="@drawable/welfare_view"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="25dp"
-            tools:layout_editor_absoluteY="313dp"></FrameLayout>
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.908"
+            tools:ignore="MissingConstraints"></FrameLayout>
 
         <FrameLayout
-            android:layout_width="300dp"
-            android:layout_height="70dp"
+            android:id="@+id/frameLayout4"
+            android:layout_width="285dp"
+            android:layout_height="90dp"
             android:background="@drawable/welfare_view"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="25dp"
-            tools:layout_editor_absoluteY="411dp"></FrameLayout>
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.95"
+            tools:ignore="MissingConstraints"></FrameLayout>
 
         <FrameLayout
-            android:layout_width="300dp"
-            android:layout_height="70dp"
+            android:id="@+id/frameLayout5"
+            android:layout_width="285dp"
+            android:layout_height="90dp"
             android:background="@drawable/welfare_view"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="25dp"
-            tools:layout_editor_absoluteY="505dp"></FrameLayout>
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.962"
+            tools:ignore="MissingConstraints"></FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout6"
+            android:layout_width="285dp"
+            android:layout_height="90dp"
+            android:background="@drawable/welfare_view"
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.964"
+            tools:ignore="MissingConstraints"></FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout7"
+            android:layout_width="285dp"
+            android:layout_height="90dp"
+            android:background="@drawable/welfare_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.969"
+            tools:ignore="MissingConstraints"></FrameLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="178dp"
-        android:layout_height="160dp"
+        android:layout_width="142dp"
+        android:layout_height="131dp"
         android:src="@drawable/character_top_img"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,10 +32,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintHorizontal_bias="0.425"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.588"
+        app:layout_constraintVertical_bias="0.587"
         tools:text="당신을 위한 맞춤 복지" />
 
     <TextView
@@ -50,10 +50,10 @@
         android:textStyle="normal"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintHorizontal_bias="0.256"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.856"
+        app:layout_constraintVertical_bias="0.844"
         tools:text="총 6개의 복지가 있습니다" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -65,8 +65,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintVertical_bias="0.32" >
 
         <FrameLayout
             android:layout_width="285dp"
@@ -94,7 +93,7 @@
         <FrameLayout
             android:id="@+id/frameLayout2"
             android:layout_width="275dp"
-            android:layout_height="47dp"
+            android:layout_height="53dp"
             android:background="@drawable/welfare_view_detail"
             android:text="@string/title"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -111,13 +110,14 @@
                 android:gravity="center"
                 android:text="맞춤 복지 전체 보기 +"
                 android:textColor="#090909"
-                android:textSize="30px"
+                android:textSize="12sp"
                 tools:layout_editor_absoluteX="41dp"
                 tools:layout_editor_absoluteY="285dp" />
 
         </FrameLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <TextView
         android:id="@+id/textView3"
@@ -130,10 +130,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-        app:layout_constraintVertical_bias="0.033"
+        app:layout_constraintVertical_bias="0.009"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -141,15 +141,47 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/notomedium"
-        android:text="총 16개의 카테고리가 있습니다"
+        android:text="총 15개의 카테고리가 있습니다"
         android:textColor="#80FFFFFF"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintHorizontal_bias="0.143"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-        app:layout_constraintVertical_bias="0.218" />
+        app:layout_constraintVertical_bias="0.253" />
+
+    <FrameLayout
+
+        android:layout_width="378dp"
+        android:layout_height="165dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.953">
+
+
+        <me.relex.circleindicator.CircleIndicator3
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="0dp"
+            tools:ignore="MissingClass" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpager"
+            android:layout_width="370dp"
+            android:layout_height="161dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:scaleType="fitXY" />
+    </FrameLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
