@@ -49,20 +49,81 @@
 
 
     <FrameLayout
-        android:id="@+id/frameLayout8"
+        android:id="@+id/frameLayout1"
         android:layout_width="375dp"
         android:layout_height="94dp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="250dp"
         tools:ignore="MissingConstraints">
 
-    </FrameLayout>
+    </FrameLayout><![CDATA[
+
+
+
+
+
+
+
+
+
 
     />
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="375dp"
+        android:layout_height="94dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="344dp">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="375dp"
+        android:layout_height="94dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="438dp">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="375dp"
+        android:layout_height="94dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="532dp">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout5"
+        android:layout_width="375dp"
+        android:layout_height="94dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="626dp">
+
+    </FrameLayout>
 
     <ImageView
         android:id="@+id/imageView4"
@@ -95,9 +156,11 @@
         android:layout_width="325dp"
         android:layout_height="1dp"
         android:background="@drawable/divider"
-        app:layout_constraintBottom_toBottomOf="@+id/frameLayout8"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout5"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout8"></View>
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout5"
+        app:layout_constraintVertical_bias="0.0"></View>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
