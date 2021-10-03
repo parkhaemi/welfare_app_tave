@@ -72,4 +72,137 @@ public class homeActivity extends AppCompatActivity {
         });
     }
 
+
+//    public class homeActivity extends AsyncTask<string, string,="" string="">{
+//
+//        @Override
+//        protected String doInBackground(String... urls) {
+//            try {
+//                JSONObject jsonObject = new JSONObject();
+//                jsonObject.accumulate("user_id", "androidTest");
+//                jsonObject.accumulate("name", "yun");
+//
+//                HttpURLConnection con = null;
+//                BufferedReader reader = null;
+//
+//                try{
+//                    //URL url = new URL("http://34.64.177.178/rest/welfare/search");
+//                    URL url = new URL(urls[0]);
+//                    con = (HttpURLConnection) url.openConnection();
+//                    con.connect();
+//
+//                    InputStream stream = con.getInputStream();
+//
+//                    reader = new BufferedReader(new InputStreamReader(stream));
+//
+//                    StringBuffer buffer = new StringBuffer();
+//
+//                    String line = "";
+//                    while((line = reader.readLine()) != null){
+//                        buffer.append(line);
+//                    }
+//
+//                    return buffer.toString();
+//
+//                } catch (MalformedURLException e){
+//                    e.printStackTrace();
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                } finally {
+//                    if(con != null){
+//                        con.disconnect();
+//                    }
+//                    try {
+//                        if(reader != null){
+//                            reader.close();
+//                        }
+//                    } catch (IOException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
+//
+//            return null;
+//        }
+//
+//        @Override
+//        protected void onPostExecute(String result) {
+//            super.onPostExecute(result);
+//            tvData.setText(result);
+//        }
+//    }
+//
+//
+//    @Override
+//    protected String doInBackground(String... urls) {
+//        try {
+//            JSONObject jsonObject = new JSONObject();
+//            jsonObject.accumulate("user_id", "androidTest");
+//            jsonObject.accumulate("name", "yun");
+//
+//            HttpURLConnection con = null;
+//            BufferedReader reader = null;
+//
+//            try{
+//                //URL url = new URL("http://34.64.177.178/rest/welfare/search");
+//                URL url = new URL(urls[0]);
+//                con = (HttpURLConnection) url.openConnection();
+//                con.setRequestMethod("POST");
+//                con.setRequestProperty("Cache-Control", "no-cache");
+//                con.setRequestProperty("Content-Type", "application/json");
+//                con.setRequestProperty("Accept", "text/html");
+//                con.setDoOutput(true);
+//                con.setDoInput(true);
+//                con.connect();
+//
+//                OutputStream outStream = con.getOutputStream();
+//                BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(outStream));
+//                writer.write(jsonObject.toString());
+//                writer.flush();
+//                writer.close();
+//
+//                InputStream stream = con.getInputStream();
+//
+//                reader = new BufferedReader(new InputStreamReader(stream));
+//
+//                StringBuffer buffer = new StringBuffer();
+//
+//                String line = "";
+//                while((line = reader.readLine()) != null){
+//                    buffer.append(line);
+//                }
+//
+//                return buffer.toString();
+//
+//            } catch (MalformedURLException e){
+//                e.printStackTrace();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            } finally {
+//                if(con != null){
+//                    con.disconnect();
+//                }
+//                try {
+//                    if(reader != null){
+//                        reader.close();
+//                    }
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//
+//        return null;
+//    }
+//
+//    @Override
+//    protected void onPostExecute(String result) {
+//        super.onPostExecute(result);
+//        tvData.setText(result);
+//    }
+//}
 }

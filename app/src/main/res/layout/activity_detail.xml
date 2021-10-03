@@ -45,18 +45,10 @@
         app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.916" />
+        app:layout_constraintVertical_bias="0.916" /><![CDATA[
 
 
-    <FrameLayout
-        android:id="@+id/frameLayout1"
-        android:layout_width="375dp"
-        android:layout_height="94dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="250dp"
-        tools:ignore="MissingConstraints">
 
-    </FrameLayout><![CDATA[
 
 
 
@@ -83,56 +75,70 @@
 
 
 
+
+
+
+
     ]]>
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="375dp"
+        android:layout_height="60dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="250dp">
+
+    </FrameLayout>
 
     <FrameLayout
         android:id="@+id/frameLayout2"
         android:layout_width="375dp"
-        android:layout_height="94dp"
+        android:layout_height="60dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="344dp">
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="310dp">
 
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/frameLayout3"
         android:layout_width="375dp"
-        android:layout_height="94dp"
+        android:layout_height="60dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="438dp">
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="370dp">
 
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/frameLayout4"
         android:layout_width="375dp"
-        android:layout_height="94dp"
+        android:layout_height="60dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="532dp">
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="430dp">
 
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/frameLayout5"
         android:layout_width="375dp"
-        android:layout_height="94dp"
+        android:layout_height="60dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="626dp">
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="490dp">
 
     </FrameLayout>
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="375dp"
-        android:layout_height="71dp"
+        android:layout_height="60dp"
         android:background="#20beab"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:layout_constraintVertical_bias="1.0"

@@ -17,4 +17,49 @@ public class MainActivity extends AppCompatActivity {
         actionBar.hide();
 
     }
+
+
+//    val url = "http://34.64.177.178/rest/welfare/read"
+//
+//    val retrofit = Retrofit.Builder()
+//            .baseUrl(url)
+//            .addConverterFactory(GsonConverterFactory.create())
+//            .build()
+//
+//    var server = retrofit.create(APIInterface::class.java)
+//
+//            binding.btnGet.setOnClickListener {
+//        server.getRequest("title", "summary").enqueue(object:Callback<ResponseDC>{
+//            override fun onFailure(call: Call<ResponseDTO>, t: Throwable) {
+//
+//            }
+//
+//            override fun onResponse(call: Call<ResponseDTO>, response: Response<ResponseDC>) {
+//                Log.d("response : ", response?.body().toString())
+//            }
+//
+//        })
+//    }
+//        binding.btnPost.setOnClickListener {
+//        server.postRequest("who", "criteria", "what". "how". "calls").enqueue((object:Callback<ResponseDC>{
+//            override fun onFailure(call: Call<ResponseDTO>, t: Throwable) {
+//
+//            }
+//            override fun onResponse(call: Call<ResponseDTO>, response: Response<ResponseDC>) {
+//                Log.d("response : ", response?.body().toString())
+//            }
+//        }))
+//    }
+//        binding.btnUpdate.setOnClickListener {
+//        server.putRequest("sites", "복지 신청하기").enqueue((object:Callback<ResponseDC>{
+//            override fun onFailure(call: Call<ResponseDTO>, t: Throwable) {
+//
+//            }
+//            override fun onResponse(call: Call<ResponseDTO>, response: Response<ResponseDC>) {
+//                Log.d("response : ", response?.body().toString())
+//            }
+//        }))
+//    }
+//
+
 }
