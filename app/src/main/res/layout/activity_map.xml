@@ -16,11 +16,17 @@
         android:id="@+id/googleMap"
         class="com.google.android.gms.maps.MapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-128dp" />
+        android:layout_height="705dp"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
         android:layout_width="325dp"
         android:layout_height="247dp"
         android:background="@drawable/round"
@@ -28,8 +34,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.865"
-        >
+        app:layout_constraintVertical_bias="0.755">
 
 
         <TextView
@@ -56,6 +61,7 @@
             android:layout_height="47dp"
             android:background="@drawable/map_button"
             android:fontFamily="@font/notomedium"
+            android:text="복지회관"
             android:textColor="#242424"
             android:textSize="12sp"
             android:textStyle="normal"
@@ -64,8 +70,7 @@
             app:layout_constraintHorizontal_bias="0.075"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.295"
-            android:text="복지회관" />
+            app:layout_constraintVertical_bias="0.295" />
 
 
         <androidx.appcompat.widget.AppCompatButton
@@ -74,6 +79,7 @@
             android:layout_height="47dp"
             android:background="@drawable/map_button"
             android:fontFamily="@font/notomedium"
+            android:text="보건소"
             android:textColor="#242424"
             android:textSize="12sp"
             android:textStyle="normal"
@@ -81,8 +87,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.295"
-            android:text="보건소" />
+            app:layout_constraintVertical_bias="0.295" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/map_button_3"
@@ -90,6 +95,7 @@
             android:layout_height="47dp"
             android:background="@drawable/map_button"
             android:fontFamily="@font/notomedium"
+            android:text="경로당"
             android:textColor="#242424"
             android:textSize="12sp"
             android:textStyle="normal"
@@ -98,8 +104,7 @@
             app:layout_constraintHorizontal_bias="0.933"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.295"
-            android:text="경로당" />
+            app:layout_constraintVertical_bias="0.295" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/map_button_4"
@@ -107,6 +112,7 @@
             android:layout_height="47dp"
             android:background="@drawable/map_button"
             android:fontFamily="@font/notomedium"
+            android:text="주민센터"
             android:textColor="#242424"
             android:textSize="12sp"
             android:textStyle="normal"
@@ -115,8 +121,7 @@
             app:layout_constraintHorizontal_bias="0.075"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.615"
-            android:text="주민센터" />
+            app:layout_constraintVertical_bias="0.615" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/map_button_5"
@@ -124,6 +129,7 @@
             android:layout_height="47dp"
             android:background="@drawable/map_button"
             android:fontFamily="@font/notomedium"
+            android:text="구청"
             android:textColor="#242424"
             android:textSize="12sp"
             android:textStyle="normal"
@@ -131,8 +137,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.615"
-            android:text="구청" />
+            app:layout_constraintVertical_bias="0.615" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/map_button_6"
@@ -140,6 +145,7 @@
             android:layout_height="47dp"
             android:background="@drawable/map_button"
             android:fontFamily="@font/notomedium"
+            android:text="병원"
             android:textColor="#242424"
             android:textSize="12sp"
             android:textStyle="normal"
@@ -148,8 +154,7 @@
             app:layout_constraintHorizontal_bias="0.933"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.615"
-            android:text="병원" />
+            app:layout_constraintVertical_bias="0.615" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/map_button_7"
@@ -157,6 +162,7 @@
             android:layout_height="47dp"
             android:background="@drawable/map_button_all"
             android:fontFamily="@font/notomedium"
+            android:text="전체보기"
             android:textColor="#242424"
             android:textSize="12sp"
             android:textStyle="normal"
@@ -165,11 +171,11 @@
             app:layout_constraintHorizontal_bias="0.514"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.92"
-            android:text="전체보기" />
+            app:layout_constraintVertical_bias="0.92" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         app:layout_constraintBottom_toBottomOf="parent"
         android:id="@+id/nav_view"
