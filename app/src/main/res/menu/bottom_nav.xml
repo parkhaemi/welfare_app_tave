@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_1"
+        android:icon="@drawable/home"
+        android:title="Home"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/navigation_2"
+        android:icon="@drawable/chatbot"
+        android:title= "ChatBot"
+        android:enabled="true"
+        />
+
+    <item
+        android:id="@+id/navigation_3"
+        android:icon="@drawable/menu_map"
+        android:title="Map"
+        android:enabled="true"
+        />
+
+    <item
+        android:id="@+id/navigation_4"
+        android:icon="@drawable/menu_pf"
+        android:title="Profile"
+        android:enabled="true"
+        />
+</menu>

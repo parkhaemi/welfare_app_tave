@@ -9,6 +9,7 @@
     android:orientation="horizontal">
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cat_15"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_width="111dp"
@@ -16,15 +17,16 @@
         android:background="@drawable/round2"
         android:fontFamily="@font/notomedium"
         android:textStyle="normal"
-        android:textSize="15sp"
+        android:textSize="18dp"
         android:textColor="#242424"
         android:lineSpacingExtra="6sp"
-        android:text="카테고리 7"
+        android:text="임신/출산"
 
 
         />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cat_0"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_width="111dp"
@@ -32,12 +34,13 @@
         android:background="@drawable/round2"
         android:fontFamily="@font/notomedium"
         android:textStyle="normal"
-        android:textSize="15sp"
+        android:textSize="18dp"
         android:textColor="#242424"
         android:lineSpacingExtra="6sp"
-        android:text="카테고리 8"/>
+        android:text="영유아"/>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cat_1"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_width="111dp"
@@ -45,10 +48,10 @@
         android:background="@drawable/round2"
         android:fontFamily="@font/notomedium"
         android:textStyle="normal"
-        android:textSize="15sp"
+        android:textSize="18dp"
         android:textColor="#242424"
         android:lineSpacingExtra="6sp"
-        android:text="카테고리 9"/>
+        android:text="아동/청소년"/>
 
 
 </LinearLayout>

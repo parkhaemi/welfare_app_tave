@@ -9,6 +9,7 @@
     android:orientation="horizontal">
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cat_12"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_width="111dp"
@@ -16,15 +17,16 @@
         android:background="@drawable/round2"
         android:fontFamily="@font/notomedium"
         android:textStyle="normal"
-        android:textSize="15sp"
+        android:textSize="18dp"
         android:textColor="#242424"
         android:lineSpacingExtra="6sp"
-        android:text="카테고리 4"
+        android:text="건강"
 
 
         />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cat_13"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_width="111dp"
@@ -32,12 +34,13 @@
         android:background="@drawable/round2"
         android:fontFamily="@font/notomedium"
         android:textStyle="normal"
-        android:textSize="15sp"
+        android:textSize="18dp"
         android:textColor="#242424"
         android:lineSpacingExtra="6sp"
-        android:text="카테고리 5"/>
+        android:text="서민금융"/>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cat_14"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_width="111dp"
@@ -45,10 +48,10 @@
         android:background="@drawable/round2"
         android:fontFamily="@font/notomedium"
         android:textStyle="normal"
-        android:textSize="15sp"
+        android:textSize="18dp"
         android:textColor="#242424"
         android:lineSpacingExtra="6sp"
-        android:text="카테고리 6"/>
+        android:text="문화"/>
 
 
 </LinearLayout>

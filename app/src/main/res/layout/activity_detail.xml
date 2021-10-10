@@ -7,11 +7,24 @@
     android:background="@color/white"
     >
 
+    <Button
+        android:id="@+id/back_btn_detail"
+        android:layout_width="15dp"
+        android:layout_height="19dp"
+        android:backgroundTint="#0024BFAD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+        tools:ignore="MissingConstraints" />
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="375dp"
         android:layout_height="250dp"
-        android:background="@drawable/detail_picture"
+        android:background="@drawable/one_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
@@ -36,7 +49,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/notobold"
         android:lineSpacingExtra="9sp"
-        android:text="복지명이 들어갑니다"
+        android:text="청소년한부모 자립지원"
         android:textColor="#ffffff"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -45,91 +58,164 @@
         app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.916" /><![CDATA[
+        app:layout_constraintVertical_bias="0.916" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:layout_editor_absoluteX="0dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="560dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/tv_main_info_container"
+                android:orientation="vertical">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notobold"
+                    android:lineSpacingExtra="5sp"
+                    android:text="복지 상세"
+                    android:textColor="#242424"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/notomedium"
+                    android:lineSpacingExtra="12sp"
+                    android:text="청소년 한부모가 자녀를 양육하고 자립할 수 있도록 지원합니다."
+                    android:textColor="#242424"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/tv_main_info_container"
+                android:orientation="vertical">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notobold"
+                    android:lineSpacingExtra="5sp"
+                    android:text="지원 대상"
+                    android:textColor="#242424"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/notomedium"
+                    android:lineSpacingExtra="12sp"
+                    android:text="아동을 양육하는 부 또는 모가 만 24세 이하인 가구를 지원합니다."
+                    android:textColor="#242424"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/tv_main_info_container"
+                android:orientation="vertical">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notobold"
+                    android:lineSpacingExtra="5sp"
+                    android:text="선정 기준"
+                    android:textColor="#242424"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/notomedium"
+                    android:lineSpacingExtra="12sp"
+                    android:text="소득이 기준 중위소득 60% 이하인 한부모 가구를 지원합니다. 참고로, 한부모가족증명서 발급 기준은 기준중위소득 72% 이하(비급여)입니다."
+                    android:textColor="#242424"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/tv_main_info_container"
+                android:orientation="vertical">
 
-    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notobold"
+                    android:lineSpacingExtra="5sp"
+                    android:text="지원내용"
+                    android:textColor="#242424"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/notomedium"
+                    android:lineSpacingExtra="12sp"
+                    android:text="아동양육비는 자녀 1인당 월 35만원을 지원합니다."
+                    android:textColor="#242424"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@drawable/tv_main_info_container"
+                android:orientation="vertical">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notobold"
+                    android:lineSpacingExtra="5sp"
+                    android:text="지원방법"
+                    android:textColor="#242424"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/notomedium"
+                    android:lineSpacingExtra="12sp"
+                    android:text="읍/면/동 주민센터로 방문 또는 우편을 통해 신청합니다. 서비스 신청시, 가족의 금융정보 제공동의는 온라인신청(online.bokjiro.go.kr)으로도 가능합니다."
+                    android:textColor="#242424"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    ]]>
-
-    <FrameLayout
-        android:id="@+id/frameLayout1"
-        android:layout_width="375dp"
-        android:layout_height="60dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="250dp">
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/frameLayout2"
-        android:layout_width="375dp"
-        android:layout_height="60dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="310dp">
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/frameLayout3"
-        android:layout_width="375dp"
-        android:layout_height="60dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="370dp">
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/frameLayout4"
-        android:layout_width="375dp"
-        android:layout_height="60dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="430dp">
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/frameLayout5"
-        android:layout_width="375dp"
-        android:layout_height="60dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="490dp">
-
-    </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
 
     <ImageView
         android:id="@+id/imageView4"
@@ -156,7 +242,22 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView4"
-        android:text="바로 신청하기" />
+        android:text="바로 신청하기"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notolight"
+        android:lineSpacingExtra="6sp"
+        android:textColor="#00FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        android:text="http://www.mogef.go.kr"
+        android:autoLink="web"/>
 
     <View
         android:layout_width="325dp"

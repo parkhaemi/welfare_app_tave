@@ -9,11 +9,22 @@
     >
 
 
+    <Button
+        android:id="@+id/back_btn_list"
+        android:layout_width="15dp"
+        android:layout_height="19dp"
+        android:backgroundTint="#0024BFAD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+        tools:ignore="MissingConstraints" />
+
     <ImageView
-        android:id="@+id/imageView2"
         android:layout_width="19dp"
         android:layout_height="15dp"
-
         android:src="@drawable/back_button_white"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,6 +33,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.461"
         tools:ignore="MissingConstraints" />
+
 
     <TextView
         android:id="@+id/textView4"
@@ -52,77 +64,83 @@
         tools:ignore="MissingConstraints">
 
 
-        <FrameLayout
-            android:id="@+id/list1"
-            android:layout_width="285dp"
-            android:layout_height="90dp"
-            android:background="@drawable/welfare_view"
-            app:layout_constraintBottom_toTopOf="@+id/frameLayout3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.666"
-            tools:ignore="MissingConstraints"></FrameLayout>
+<!--        <FrameLayout-->
+<!--            android:id="@+id/list1"-->
+<!--            android:layout_width="285dp"-->
+<!--            android:layout_height="90dp"-->
+<!--            android:background="@drawable/welfare_view"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/frameLayout3"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.666"-->
+<!--            tools:ignore="MissingConstraints"></FrameLayout>-->
 
-        <FrameLayout
-            android:id="@+id/frameLayout3"
-            android:layout_width="285dp"
-            android:layout_height="90dp"
-            android:background="@drawable/welfare_view"
-            app:layout_constraintBottom_toTopOf="@+id/frameLayout4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.908"
-            tools:ignore="MissingConstraints"></FrameLayout>
+<!--        <FrameLayout-->
+<!--            android:id="@+id/frameLayout3"-->
+<!--            android:layout_width="285dp"-->
+<!--            android:layout_height="90dp"-->
+<!--            android:background="@drawable/welfare_view"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/frameLayout4"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.908"-->
+<!--            tools:ignore="MissingConstraints"></FrameLayout>-->
 
-        <FrameLayout
-            android:id="@+id/frameLayout4"
-            android:layout_width="285dp"
-            android:layout_height="90dp"
-            android:background="@drawable/welfare_view"
-            app:layout_constraintBottom_toTopOf="@+id/frameLayout5"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.95"
-            tools:ignore="MissingConstraints"></FrameLayout>
+<!--        <FrameLayout-->
+<!--            android:id="@+id/frameLayout4"-->
+<!--            android:layout_width="285dp"-->
+<!--            android:layout_height="90dp"-->
+<!--            android:background="@drawable/welfare_view"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/frameLayout5"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.95"-->
+<!--            tools:ignore="MissingConstraints"></FrameLayout>-->
 
-        <FrameLayout
-            android:id="@+id/frameLayout5"
-            android:layout_width="285dp"
-            android:layout_height="90dp"
-            android:background="@drawable/welfare_view"
-            app:layout_constraintBottom_toTopOf="@+id/frameLayout6"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.962"
-            tools:ignore="MissingConstraints"></FrameLayout>
+<!--        <FrameLayout-->
+<!--            android:id="@+id/frameLayout5"-->
+<!--            android:layout_width="285dp"-->
+<!--            android:layout_height="90dp"-->
+<!--            android:background="@drawable/welfare_view"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/frameLayout6"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.962"-->
+<!--            tools:ignore="MissingConstraints"></FrameLayout>-->
 
-        <FrameLayout
-            android:id="@+id/frameLayout6"
-            android:layout_width="285dp"
-            android:layout_height="90dp"
-            android:background="@drawable/welfare_view"
-            app:layout_constraintBottom_toTopOf="@+id/frameLayout7"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.964"
-            tools:ignore="MissingConstraints"></FrameLayout>
+<!--        <FrameLayout-->
+<!--            android:id="@+id/frameLayout6"-->
+<!--            android:layout_width="285dp"-->
+<!--            android:layout_height="90dp"-->
+<!--            android:background="@drawable/welfare_view"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/frameLayout7"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.964"-->
+<!--            tools:ignore="MissingConstraints"></FrameLayout>-->
 
-        <FrameLayout
-            android:id="@+id/frameLayout7"
-            android:layout_width="285dp"
-            android:layout_height="90dp"
-            android:background="@drawable/welfare_view"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.969"
-            tools:ignore="MissingConstraints"></FrameLayout>
+<!--        <FrameLayout-->
+<!--            android:id="@+id/frameLayout7"-->
+<!--            android:layout_width="285dp"-->
+<!--            android:layout_height="90dp"-->
+<!--            android:background="@drawable/welfare_view"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.969"-->
+<!--            tools:ignore="MissingConstraints"></FrameLayout>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id = "@+id/list_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,27 +18,42 @@
         <entry key="..\:/Users/haemi/AndroidStudioProjects/tave0910/app/src/main/res/layout/activity_list.xml" value="0.264" />
         <entry key="..\:/Users/haemi/AndroidStudioProjects/tave0910/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/haemi/AndroidStudioProjects/tave0910/app/src/main/res/layout/home.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable-v24/card_component_container.xml" value="0.10833333333333334" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable-v24/character_top_img.xml" value="0.1421875" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable-v24/menu_chat.xml" value="0.10462962962962963" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable-v24/menu_home.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable-v24/menu_map.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable-v24/menu_pf.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable-v24/right_arrow_ico.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable-v24/toggle_button_off.xml" value="0.1390625" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable-v24/toggle_button_selector.xml" value="0.1390625" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable-v24/tv_main_info_container.xml" value="0.17447916666666666" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable/application_button.xml" value="0.1421875" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable/back_button_white.xml" value="0.1421875" />
         <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable/detail_picture.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable/map_button.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable/map_button_all.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable/round.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable/round2.xml" value="0.14791666666666667" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable/round3.xml" value="0.265625" />
         <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable/welfare_view.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable/welfare_view_activity.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable/welfare_view_detail.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/drawable/welfare_view_detail_activityDetail.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/layout/activity_chat.xml" value="0.23072916666666668" />
-        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/layout/activity_detail.xml" value="0.152" />
-        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/layout/activity_home.xml" value="0.2" />
-        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/layout/activity_list.xml" value="0.176" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/layout/activity_detail.xml" value="0.6" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/layout/activity_home.xml" value="0.72" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/layout/activity_list.xml" value="0.3548387096774194" />
         <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/layout/activity_map.xml" value="0.6" />
-        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/layout/frame_1.xml" value="0.152" />
-        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/layout/frame_2.xml" value="0.13177083333333334" />
-        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/layout/frame_3.xml" value="0.13177083333333334" />
-        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/layout/frame_4.xml" value="0.13177083333333334" />
-        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/layout/frame_5.xml" value="0.13177083333333334" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/layout/activity_map.xml" value="0.536" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/layout/card_component.xml" value="0.536" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/layout/frame_1.xml" value="0.4" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/layout/frame_2.xml" value="0.1" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/layout/frame_3.xml" value="0.1" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/layout/frame_4.xml" value="0.1" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/layout/frame_5.xml" value="0.1" />
+        <entry key="..\:/Users/haemi/AndroidStudioProjects/welfare_app_tave/app/src/main/res/menu/bottom_nav.xml" value="0.264" />
       </map>
     </option>
   </component>

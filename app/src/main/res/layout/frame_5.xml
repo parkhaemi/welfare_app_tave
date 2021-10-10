@@ -9,6 +9,7 @@
     android:orientation="horizontal">
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cat_5"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_width="111dp"
@@ -16,15 +17,16 @@
         android:background="@drawable/round2"
         android:fontFamily="@font/notomedium"
         android:textStyle="normal"
-        android:textSize="15sp"
+        android:textSize="18dp"
         android:textColor="#242424"
         android:lineSpacingExtra="6sp"
-        android:text="카테고리 13"
+        android:text="장애인"
 
 
         />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cat_6"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_width="111dp"
@@ -32,12 +34,13 @@
         android:background="@drawable/round2"
         android:fontFamily="@font/notomedium"
         android:textStyle="normal"
-        android:textSize="15sp"
+        android:textSize="18dp"
         android:textColor="#242424"
         android:lineSpacingExtra="6sp"
-        android:text="카테고리 14"/>
+        android:text="한부모"/>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cat_7"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_width="111dp"
@@ -45,10 +48,10 @@
         android:background="@drawable/round2"
         android:fontFamily="@font/notomedium"
         android:textStyle="normal"
-        android:textSize="15sp"
+        android:textSize="18dp"
         android:textColor="#242424"
         android:lineSpacingExtra="6sp"
-        android:text="카테고리 15"/>
+        android:text="저소득층"/>
 
 
 </LinearLayout>

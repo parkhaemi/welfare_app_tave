@@ -1,11 +1,15 @@
 package com.example.tave0910;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class listActivity extends AppCompatActivity {
+    private Button back_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +20,19 @@ public class listActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
+        back_btn = (Button) findViewById(R.id.back_btn_list);
+        back_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // TODO : click event
+                listActivity();
+            }
+        });
+
+    }
+    public void listActivity(){
+        Intent intent = new Intent(this, homeActivity.class);
+        startActivity(intent);
     }
 
 //    super.onCreate(savedInstanceState);

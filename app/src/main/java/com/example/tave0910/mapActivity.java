@@ -37,6 +37,40 @@ public class mapActivity extends AppCompatActivity implements OnMapReadyCallback
         mapFragment = (MapFragment)fragmentManager.findFragmentById(R.id.googleMap);
         mapFragment.getMapAsync(this);
 
+        // navigation onClickListener
+        BottomNavigationView bottomNavigationView = findViewById(R.id.nav_view);
+        bottomNavigationView.setSelectedItemId(R.id.navigation_1);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                switch(item.getItemId()){
+                    case R.id.navigation_1:
+                        Intent intent1 = new Intent(mapActivity.this, homeActivity.class);
+                        //intent2.putExtras(bundle);
+                        startActivity(intent1);
+                        finish();
+                        return true;
+                    case R.id.navigation_2:
+                        Intent intent2 = new Intent(mapActivity.this, chatActivity.class);
+                        //intent2.putExtras(bundle);
+                        startActivity(intent2);
+                        finish();
+                        return true;
+                    case R.id.navigation_3:
+                        return true;
+                    case R.id.navigation_4:
+                        Intent intent4 = new Intent(mapActivity.this, MyProfileActivity.class);
+                        //intent4.putExtras(bundle);
+                        startActivity(intent4);
+                        finish();
+                        return true;
+                }
+                return false;
+            }
+        });
+
+
     }
 
     @Override

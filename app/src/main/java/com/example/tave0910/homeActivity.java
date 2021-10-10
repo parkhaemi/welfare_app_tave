@@ -1,11 +1,33 @@
 package com.example.tave0910;
 
-import android.os.Bundle;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.MenuItem;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.ArrayList;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import me.relex.circleindicator.CircleIndicator3;
 
@@ -14,6 +36,12 @@ public class homeActivity extends AppCompatActivity {
     private FragmentStateAdapter pagerAdapter;
     private int num_page = 5;
     private CircleIndicator3 mIndicator;
+    private Button button1;
+    private Button button2;
+    private Button button3;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +98,75 @@ public class homeActivity extends AppCompatActivity {
                 mIndicator.animatePageSelected(position%num_page);
             }
         });
+        // navigation onClickListener
+        BottomNavigationView bottomNavigationView = findViewById(R.id.nav_view);
+        bottomNavigationView.setSelectedItemId(R.id.navigation_1);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                switch(item.getItemId()){
+                    case R.id.navigation_1:
+                        return true;
+                    case R.id.navigation_2:
+                        Intent intent2 = new Intent(homeActivity.this, chatActivity.class);
+                        //intent2.putExtras(bundle);
+                        startActivity(intent2);
+                        finish();
+                        return true;
+                    case R.id.navigation_3:
+                        Intent intent3 = new Intent(homeActivity.this, mapActivity.class);
+                        //intent3.putExtras(bundle);
+                        startActivity(intent3);
+                        finish();
+                        return true;
+                    case R.id.navigation_4:
+                        Intent intent4 = new Intent(homeActivity.this, MyProfileActivity.class);
+                        //intent4.putExtras(bundle);
+                        startActivity(intent4);
+                        finish();
+                        return true;
+                }
+                return false;
+            }
+        });
+
+        button1 = (Button) findViewById(R.id.home_btn_1);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // TODO : click event
+                listActivity();
+            }
+        });
+
+        button2 = (Button) findViewById(R.id.see_all_button);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // TODO : click event
+                listActivity();
+            }
+        });
+
+        button3 = (Button) findViewById(R.id.data1_info);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // TODO : click event
+                listActivity2();
+            }
+        });
+
+
+    }
+    public void listActivity(){
+        Intent intent = new Intent(this, listActivity.class);
+        startActivity(intent);
+    }
+    public void listActivity2(){
+        Intent intent = new Intent(this, detailActivity.class);
+        startActivity(intent);
     }
 
 
