@@ -3,28 +3,28 @@
 
     <item
         android:id="@+id/navigation_1"
-        android:icon="@drawable/home"
-        android:title="Home"
+        android:icon="@drawable/bottom_menu_ico_1"
+        android:title="홈"
         android:enabled="true"
         />
     <item
         android:id="@+id/navigation_2"
-        android:icon="@drawable/chatbot"
-        android:title= "ChatBot"
+        android:icon="@drawable/bottom_menu_ico_2"
+        android:title= "챗봇"
         android:enabled="true"
         />
 
     <item
         android:id="@+id/navigation_3"
-        android:icon="@drawable/menu_map"
-        android:title="Map"
+        android:icon="@drawable/bottom_menu_ico_3"
+        android:title="내 주변"
         android:enabled="true"
         />
 
     <item
         android:id="@+id/navigation_4"
-        android:icon="@drawable/menu_pf"
-        android:title="Profile"
+        android:icon="@drawable/bottom_menu_ico_4"
+        android:title="프로필"
         android:enabled="true"
         />
 </menu>

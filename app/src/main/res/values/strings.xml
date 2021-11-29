@@ -1,10 +1,4 @@
 <resources>
-    <string name="app_name">tave0910</string>
-    <string name="title">당신을 위한 맞춤 복지</string>
-    <string name="sub_title">총 10개의 복지가 있습니다</string>
-    <string name="list">내 관심복지 리스트</string>
-    <string name="map_info">주변 복지시설 정보</string>
-
-
-
+    <string name="app_name">welfareapp</string>
+    <string name="msg_token_fmt" translatable="false">Token : %s</string>
 </resources>

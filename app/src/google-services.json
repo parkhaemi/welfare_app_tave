@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "977988153518",
+    "project_id": "hazel-cedar-312311",
+    "storage_bucket": "hazel-cedar-312311.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977988153518:android:4c70b81dd2de7d10dc3d3f",
+        "android_client_info": {
+          "package_name": "com.example.fcm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977988153518-90kimk4mral8dj2ue2bci7icn9q7epg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNYyl525NEvMYoq1levdKTOPr6jvM88V0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977988153518-90kimk4mral8dj2ue2bci7icn9q7epg4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977988153518:android:ab7ef2ad4d2e6772dc3d3f",
+        "android_client_info": {
+          "package_name": "com.example.welfareapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977988153518-90kimk4mral8dj2ue2bci7icn9q7epg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNYyl525NEvMYoq1levdKTOPr6jvM88V0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977988153518-90kimk4mral8dj2ue2bci7icn9q7epg4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
